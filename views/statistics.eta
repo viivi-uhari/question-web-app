@@ -1,0 +1,28 @@
+<% layout('./layouts/layout.eta') %>
+
+<br/>
+
+<h1>Statistics!</h1>
+
+<p>Number of answers in total: <%= it.nofAnswers %></p>
+<p>Number of correct answers: <%= it.nofCorrectAnswers %></p>
+<p>Number of answers to your questions: <%= it.nofAnswersCreatedBy %></p>
+
+<br/>
+
+<h2>Users who have answered the most questions:</h2>
+
+<table class="table table-striped">
+  <thead>
+    <tr class="table-primary">
+      <th>User (email)</th><th>Number of answered questions</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% it.usersWithMostAnswers.forEach(user => { %>
+  <tr>
+    <td><%= user.email %></td><td><%= user.count %></td>
+  </tr>
+  <% }) %>
+  </tbody>
+</table>

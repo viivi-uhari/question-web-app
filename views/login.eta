@@ -1,0 +1,25 @@
+<% layout("./layouts/layout.eta") %>
+
+<br/>
+
+<h1>Log in</h1>
+
+<% if (it.errors && it.errors.length > 0) { %>
+<ul>
+  <% it.errors.forEach((error) => { %>
+    <li><%= error %></li>
+  <% }); %>
+</ul>
+<% } %>
+
+<form method="POST" action="/auth/login">
+  Email:<br/>
+  <input type="email" name="email" value="<%= it.email ? it.email : "" %>"/><br/>
+  Password:<br/>
+  <input type="password" name="password" /><br/>
+  <input type="submit" value="Login" class="btn btn-outline-primary" />
+</form>
+
+<br/>
+
+<p>Not yet registered? Register <a href="/auth/register">here</a>.<p/>

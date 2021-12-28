@@ -1,0 +1,21 @@
+<% layout("./layouts/layout.eta") %>
+
+<br/>
+
+<h1>Creating and answering questions!</h1><br/>
+
+<p>
+In this application you can create questions and add answer options to them.
+You can also answer questions created by yourself and other users.
+</p>
+
+<p>
+In addition, you can check out some statistics about
+your answers and which questions by which users have been answered the most.
+</p>
+<br/>
+
+<p>
+If you haven't already registered, register <a href="/auth/register">here</a>.
+Otherwise, <a href="/auth/login">log in</a>.
+</p>

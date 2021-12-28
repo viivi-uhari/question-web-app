@@ -1,0 +1,41 @@
+<% layout("./layouts/layout.eta") %>
+
+<br/>
+
+<% if (it.data.question) { %>
+
+<h1><%= it.data.question.title %></h1>
+
+<h3><%= it.data.question.question_text %></h3>
+
+<br/>
+
+<h2>Options</h2>
+
+<% if (it.data.options && it.data.options.length > 0) { %>
+
+<ul>
+<% it.data.options.forEach(option => { %>
+  <li>
+    <%= option.option_text %>
+    <form method="POST" action="/quiz/<%= it.data.question.id %>/options/<%= option.id %>">
+      <input type="submit" value="Choose" class="btn btn-outline-primary" />
+    </form>
+  </li>
+<% }); %>
+</ul>
+
+<% } else { %>
+
+<p>No options available.</p>
+
+<a href="/quiz">Next question</a>
+
+<% } %>
+
+<% } else { %>
+
+<h4>No questions available.</h4>
+<a href="/questions">Create a question!</a>
+
+<% } %>

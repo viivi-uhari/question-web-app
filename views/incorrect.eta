@@ -1,0 +1,22 @@
+<% layout("./layouts/layout.eta") %>
+
+<br/>
+
+<h4>Incorrect!</h4>
+
+<% if (it.data.correctOptions && it.data.correctOptions.length > 0) { %>
+
+<p>The correct options were:</p>
+<ul>
+<% it.data.correctOptions.forEach(option => { %>
+  <li><%= option.option_text %></li>
+<% }); %>
+</ul>
+
+<% } else { %>
+
+<p>Sorry, there are no correct options for this question yet.</p>
+
+<% } %>
+
+<a href="/quiz">Next question</a>
