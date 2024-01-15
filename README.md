@@ -19,7 +19,7 @@ as well as the welcome page at '/' are accessible even without logging in.
 
 
 -------------------------------------------------------------------------------
-#### Creating a database:
+## Creating a database:
 -------------------------------------------------------------------------------
 
 The application uses a database that requires four tables:
@@ -69,7 +69,7 @@ or before running the tests in the tests folder.
 
 
 -------------------------------------------------------------------------------
-#### Running the application:
+## Running the application:
 -------------------------------------------------------------------------------
 
 When in the root of the application
@@ -80,7 +80,7 @@ By default, the application launches on the port 7777.
 
 
 -------------------------------------------------------------------------------
-#### Testing the application:
+## Testing the application:
 -------------------------------------------------------------------------------
 
 To test the application, you can use the tests given in the folder tests.
