@@ -2,7 +2,7 @@
 
 # Web App for Creating and Answering Questions
 
-This application has been created as a part of a course at Aalto University's.
+This application has been created as a part of a course at Aalto University.
 
 With this application you can create questions, answer them
 and see some statistics about them.
