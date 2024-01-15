@@ -1,9 +1,8 @@
-CS-C3170 - Web Software Development
-Project 2
 5.12.2021
 
+# Web App for Creating and Answering Questions
 
-Application: Creating and answering questions!
+This application has been created as a part of a course at Aalto University's.
 
 With this application you can create questions, answer them
 and see some statistics about them.
@@ -20,7 +19,7 @@ as well as the welcome page at '/' are accessible even without logging in.
 
 
 -------------------------------------------------------------------------------
-Creating a database:
+#### Creating a database:
 -------------------------------------------------------------------------------
 
 The application uses a database that requires four tables:
@@ -70,7 +69,7 @@ or before running the tests in the tests folder.
 
 
 -------------------------------------------------------------------------------
-Running the application:
+#### Running the application:
 -------------------------------------------------------------------------------
 
 When in the root of the application
@@ -78,14 +77,10 @@ you can run the application locally using the command
 'deno run --unstable --allow-all --watch run-locally.js'.
 By default, the application launches on the port 7777.
 
-The application has also been deployed to
-https://wsd-project2-questions.herokuapp.com/
-where it can also be run at.
-
 
 
 -------------------------------------------------------------------------------
-Testing the application:
+#### Testing the application:
 -------------------------------------------------------------------------------
 
 To test the application, you can use the tests given in the folder tests.
